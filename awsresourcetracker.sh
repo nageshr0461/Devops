@@ -12,7 +12,7 @@
 ###########################################
 #EC2 instances
 echo "printing ec2 instances:"
-aws ec2 describe-instances | jq '.Reservations[].OwnerId[].'
+aws ec2 describe-instances | jq '.Reservations[].OwnerId'
 
 echo "printing s3 resources"
 aws s3 ls
