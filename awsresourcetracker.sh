@@ -17,5 +17,5 @@ aws ec2 describe-instances | jq '.Reservations[].OwnerId'
 echo "printing s3 resources"
 aws s3 ls
 
-echo "printing IAM users"
+echo "printing IAM users on console"
 aws iam get-user
